@@ -5,6 +5,7 @@ class Human < Player
     puts "Enter your a position"
     input = gets
     while !board.valid_move?(input)
+      puts "Enter your a position"
       input = gets
     end
 
