@@ -26,8 +26,8 @@ class Game
       @board.display
       @board.update(move,current_player)
       @board.display
-      puts
-      puts
+      puts ""
+      puts ""
   end
 
   def play
