@@ -3,7 +3,7 @@ class Board
   attr_accessor :cells
 
   def initialize
-    @cells = Array.new(9, " ")
+    self.reset!
   end
 
   def display
@@ -41,7 +41,6 @@ class Board
   end
 
   def reset!
-    @cells.clear
     @cells = Array.new(9, " ")
   end
 end
