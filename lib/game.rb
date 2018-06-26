@@ -29,7 +29,7 @@ class Game
 
   def play
 #<<<<<<< HEAD
-    while !self.over?
+    while !(self.draw? || self.won?)
       self.turn
       binding.pry
       break if (self.draw? || self.won?)
@@ -65,7 +65,7 @@ class Game
   end
 
   def over?
-    self.draw? || !!self.won?
+    self.draw? || self.won?
   end
 
   def winner
