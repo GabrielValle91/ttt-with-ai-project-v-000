@@ -28,6 +28,7 @@ class Game
       @board.display
       puts ""
       puts ""
+    end
   end
 
   def play
