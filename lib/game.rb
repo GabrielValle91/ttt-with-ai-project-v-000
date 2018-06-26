@@ -19,12 +19,13 @@ class Game
   end
 
   def turn
-    move = current_player.move(@board)
+    player = current_player
+    move = player.move(@board)
     if !@board.valid_move?(move)
       turn
     else
       @board.display
-      @board.update(move,current_player)
+      @board.update(move,player)
       @board.display
       puts ""
       puts ""
