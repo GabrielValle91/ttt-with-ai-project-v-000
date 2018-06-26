@@ -18,7 +18,7 @@ class Game
     @player_2 = player_2
   end
 
-  def turn 
+  def turn
     @board.display
     if self.current_player == @player_1
       @player_1.move(@board)
