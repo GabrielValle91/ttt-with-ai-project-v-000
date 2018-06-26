@@ -32,9 +32,9 @@ class Game
   end
 
   def play
-    while !(self.draw? || self.won?)
-      self.turn
-      break if (self.draw? || self.won?)
+    while !(draw? || won?)
+      turn
+      break if (draw? || won?)
     end
     puts "Congratulations #{self.winner}!" if self.won?
     puts "Cat's Game!" if self.draw?
@@ -57,11 +57,11 @@ class Game
   end
 
   def draw?
-    @board.full? && !self.won?
+    @board.full? && !won?
   end
 
   def over?
-    self.draw? || self.won?
+    draw? || won?
   end
 
   def winner
