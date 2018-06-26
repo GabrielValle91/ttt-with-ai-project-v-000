@@ -56,7 +56,7 @@ class Game
       @board.cells[combo[0]] == @board.cells[combo[1]] && @board.cells[combo[0]] == @board.cells[combo[2]] && (@board.cells[combo[0]] == "X" || @board.cells[combo[0]] == "O")
         #winner = "#{combo[0]}, #{combo[1]}, #{combo[2]}"
       end
-      #binding.pry
+      binding.pry
     winner
   end
 
