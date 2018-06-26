@@ -31,15 +31,15 @@ class Game
 #<<<<<<< HEAD
     while !self.over?
       self.turn
-      break if self.draw?
+      break if self.over?
     end
     #binding.pry
     puts "Congratulations #{self.winner}!" if self.won?
     puts "Cat's Game!" if self.draw?
 #=======
-    while !self.draw? && !self.won?
-      turn
-    end
+#    while !self.draw? && !self.won?
+#      turn
+#    end
 #>>>>>>> 6b02a6b34786c5b1ba459aa2f275947c28b81866
   end
 
