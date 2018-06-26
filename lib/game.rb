@@ -65,7 +65,7 @@ class Game
   end
 
   def over?
-    self.draw? || self.won?
+    self.draw? || !!self.won?
   end
 
   def winner
