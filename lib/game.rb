@@ -68,10 +68,8 @@ class Game
   end
 
   def winner
-    if !self.won?
-      return nil
-    else
-      return @board.cells[self.won?[0]]
+    if won = won?
+      @board.cells[won.first]
     end
   end
 
