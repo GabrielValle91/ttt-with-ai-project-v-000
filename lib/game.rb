@@ -49,11 +49,10 @@ class Game
   end
 
   def won?
-    winner = WIN_COMBINATIONS.find do |combo|
+    WIN_COMBINATIONS.find do |combo|
       @board.cells[combo[0]] == @board.cells[combo[1]] && @board.cells[combo[0]] == @board.cells[combo[2]] && (@board.cells[combo[0]] == "X" || @board.cells[combo[0]] == "O")
         #winner = "#{combo[0]}, #{combo[1]}, #{combo[2]}"
-      end
-    winner
+    end
   end
 
   def draw?
