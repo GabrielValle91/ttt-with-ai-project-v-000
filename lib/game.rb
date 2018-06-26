@@ -31,6 +31,7 @@ class Game
 #<<<<<<< HEAD
     while !self.over?
       self.turn
+      binding.pry
       break if self.over?
     end
     #binding.pry
