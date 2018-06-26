@@ -31,7 +31,7 @@ class Game
 #<<<<<<< HEAD
     while !(self.draw? || self.won?)
       self.turn
-      binding.pry
+      #binding.pry
       break if (self.draw? || self.won?)
     end
     #binding.pry
