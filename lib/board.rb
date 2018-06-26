@@ -19,7 +19,7 @@ class Board
   end
 
   def full?
-    @cells.all?(" ")
+    @cells.all?{|c| c != " "}
   end
 
   def taken?(position)
