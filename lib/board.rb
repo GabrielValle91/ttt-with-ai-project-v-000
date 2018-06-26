@@ -32,7 +32,7 @@ class Board
   end
 
   def turn_count
-    @cells.select {|c| c == "X" || c == "O"}.count
+    @cells.count {|c| c == "X" || c == "O"}
   end
 
   def update(position, player)
