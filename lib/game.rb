@@ -19,12 +19,15 @@ class Game
   end
 
   def turn
-    @board.display
-    if self.current_player == @player_1
-      @player_1.move(@board)
+    move = current_player.move(@board)
+    if !@board.valid_move?(move)
+      turn
     else
-      @player_2.move(@board)
-    end
+      @board.display
+      @board.update(move,current_player)
+      @board.display
+      puts
+      puts
   end
 
   def play
