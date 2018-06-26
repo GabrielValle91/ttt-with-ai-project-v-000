@@ -14,7 +14,7 @@ class CLI
       play_again = gets.strip
       if play_again.downcase == "y" || play_again.downcase == "yes"
           self.play_game
-        end
+      end
     end
   end
 end
