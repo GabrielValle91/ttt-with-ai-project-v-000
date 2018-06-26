@@ -25,7 +25,7 @@ class Game
       turn
     else
       @board.display
-      @board.update(move,player)
+      @board.update(move, player)
       @board.display
       puts ""
       puts ""
