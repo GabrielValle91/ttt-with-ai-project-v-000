@@ -32,7 +32,7 @@ class Game
     while !self.over?
       self.turn
       binding.pry
-      break if self.over?
+      break if (self.draw? || self.won?)
     end
     #binding.pry
     puts "Congratulations #{self.winner}!" if self.won?
